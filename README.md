@@ -1,0 +1,3 @@
+Assignment: Implement the code from Responsive Web Design and push it to your GitHub repo. Create a local folder named "responsive-lab" in your labs folder and create a local repo. Create a cloud repo by the same name on github and push your code early and often.
+
+How To Submit:To be considered complete your repo should contain all the code and examples from the tutorial. Feel free to use any content to demonstrate the functionality
