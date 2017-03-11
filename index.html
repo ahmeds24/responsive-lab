@@ -1,29 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Responsive Images Test Page</title>
-	<script>
-		
-		//optional: set config options here!
-		var rwd_images = { 
-			widthBreakPoint: 600
-		};
-		
-	</script>
-	<script src="responsiveimgs.js"></script>
-	<!-- demo styles -->
-	<link type="text/css" rel="stylesheet" href="stylesheet.css">
-</head> 
-<body> 
-
-	<h1>Responsive Images Test Page</h1>
-	<p>In supported browsers, the following image will load either small or large version depending on screen resolution, making a single 1kb request before requesting the appropriate size.</p>
-
-	<img src="img/running-sml.jpg?full=img/running-lrg.jpg" />
-
-	<p id="cred"><strong>Photo credit (CC):</strong> Cia de Foto <a href="http://www.flickr.com/photos/ciadefoto/3192757134/in/pool-809956@N25/">Flickr Creative Commons</a></p>
+  <!--Setting the initial-scale to 1 overrides the default to resize image on a Apple platform-->
+	<meta name="viewport" content="width=device-width; initial-scale=1.0">
+<style>
+	body{background-color:aqua;
+	}
+	@media screen and (max-width: 420px){
+		body{
+			background-color: sandybrown;
+		}
+		h1{
+			width: 100%;
+			text-align: center;
+		}
+		img{
+			width: 100%;
+		}
+		p{
+			width: 70%
+		}
+	}
 	
+	</style>
+</head>
+<body>
+<h1> Responsive Website </h1>
+
+<img src="img/running-lrg.jpg">
+
+<!--<img src="<img src="img/running-sml.jpg?full=img/running-lrg.jpg">-->
+
+	<p>Hello everyone this is a site just to test my responsive website and media queries</p>
+
+
 </body>
+    
 </html>
