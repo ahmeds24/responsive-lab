@@ -1,12 +1,65 @@
-body { font-family: Helvetica, sans-serif; 
-       background: black; color: #eee; margin: 20px auto; padding: 0 20px; max-width: 980px; 
-	   }
+body {
+  background: #ddd;
+}
 
-img { border: 0; width: 100%; display: block; max-width: 100%; 
+.container {
+  width: 538px;
+	height: 40px;
+	background-color:grey;
 }
-		
-#cred { font-size: .7em; color: #aaa; 
+section,
+aside {
+   margin: 1.858736059%; /*  10px ÷ 538px = .018587361 */
 }
-		a { color: #fff; 
-		}
+section {
+  float: left;
+  width: 63.197026%;    /* 340px ÷ 538px = .63197026 */
+	background-color:green;
+}
+aside {
+  float: right;
+  width: 29.3680297%;  /* 158px ÷ 538px = .293680297 */
+	background-color:green;
+}
+
+
+figure {
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9 */
+  position: relative;
+  width: 100%;
+}
+iframe {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+/* Media for larger devices */
+@media screen and (min-width: 800px) {
+  body {
+    background-image: url(https://cdn-images-1.medium.com/max/2000/1*l65gLk36q9uBzujX3LNz1A.png) 50% 50% no-repeat;
+  }
+}
+
+@media all and (min-width: 420px) {
+  .container {
+    max-width: 538px;
+  }
+  section {
+    float: left;
+    width: 63.197026%;
+  }
+  aside {
+    float: right;
+    width: 29.3680297%;
+  }
+}
+
+@viewport {
+  width: device-width;
+  zoom: 1;
+}
 

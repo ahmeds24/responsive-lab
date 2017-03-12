@@ -3,35 +3,30 @@
 <head>
   <!--Setting the initial-scale to 1 overrides the default to resize image on a Apple platform-->
 	<meta name="viewport" content="width=device-width; initial-scale=1.0">
-<style>
-	body{background-color:aqua;
-	}
-	@media screen and (max-width: 420px){
-		body{
-			background-color: sandybrown;
-		}
-		h1{
-			width: 100%;
-			text-align: center;
-		}
-		img{
-			width: 100%;
-		}
-		p{
-			width: 70%
-		}
-	}
+	<meta name="viewport" content="minimum-scale=0">
+	<meta name="viewport" content="user-scalable=yes">
+	<meta name="viewport" content="target-densitydpi=device-dpi">
+
+
+
 	
-	</style>
+<link type="text/css" rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
 <h1> Responsive Website </h1>
 
-<img src="img/running-lrg.jpg">
+<div class="container">
+  <section>section</section>
+  <aside>aside</aside>
+</div>
+
+<figure>
+  <iframe src="https://www.youtube.com/embed/4Fqg43ozz7A"></iframe>
+</figure>
+
 
 <!--<img src="<img src="img/running-sml.jpg?full=img/running-lrg.jpg">-->
 
-	<p>Hello everyone this is a site just to test my responsive website and media queries</p>
 
 
 </body>
